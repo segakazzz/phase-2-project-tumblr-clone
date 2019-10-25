@@ -22,7 +22,7 @@ app.use(express.urlencoded())
 //   getAllPostsFromOneUser
 // } = require('./src/db/posts.js')
 
-const port = 4000
+const port = process.env.PORT || 4000
 // -----------------------------------------------------------d---------------
 // Express.js Endpoints
 const homepageTemplate = fs.readFileSync('./templates/homepage.html', 'utf8')
